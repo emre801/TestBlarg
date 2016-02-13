@@ -1,0 +1,40 @@
+package com.johnerdo.battle;
+
+import java.util.LinkedList;
+
+import org.johnerdo.globalInfo.PokemonList;
+
+import com.johnerdo.imageCompare.MatchingMethod;
+import com.johnerdo.imageCompare.RobotBot;
+import com.pokejava.Pokemon;
+
+public class Battle {
+
+	//LinkedList<String> pokemonOnScreen;
+	LinkedList<Pokemon> pokemon;
+	public Battle(){
+		this.pokemon = new LinkedList<Pokemon>();
+		RobotBot.Screen();
+		PokemonList.setMapping();
+		setUp();
+		printPokemon();
+		
+	}
+	public void setUp(){
+		for(Integer dexNum :MatchingMethod.getPokemonNumbersOnScreen()){
+			pokemon.add(new Pokemon(dexNum));
+		}
+	}
+	public void printPokemon(){
+		for(Pokemon pok:pokemon){
+			System.out.println(pok.getName());
+		}
+	}
+	public static void main(String[] args){
+		//new Battle();
+		Pokemon p = new Pokemon(479);
+		p.printInfo();
+		//System.out.println(p.getName());
+		//TestPokemon.main(args);
+	}
+}

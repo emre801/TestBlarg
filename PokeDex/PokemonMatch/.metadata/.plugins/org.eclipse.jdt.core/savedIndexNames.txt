@@ -1,0 +1,16 @@
+INDEX VERSION 1.126+/home/emre801/Documents/pokemonProj/PokeDex/PokemonMatch/.metadata/.plugins/org.eclipse.jdt.core
+2188564834.index
+2542481881.index
+66001293.index
+2834765142.index
+2136884691.index
+408096347.index
+2663830.index
+3123747732.index
+471572011.index
+3486963703.index
+1437607047.index
+4016314033.index
+3989489031.index
+686898250.index
+2672069024.index

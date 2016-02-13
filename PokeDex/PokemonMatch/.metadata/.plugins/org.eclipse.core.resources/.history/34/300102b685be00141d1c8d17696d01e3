@@ -1,0 +1,27 @@
+package com.johnerdo.imageCompare;
+
+import java.awt.AWTException;
+import java.awt.MouseInfo;
+import java.awt.Point;
+import java.awt.Robot;
+
+public class RobotBot {
+		Robot robot;
+		public RobotBot(){
+			try {
+				this.robot = new Robot();
+			} catch (AWTException e) {
+				e.printStackTrace();
+			}
+		}
+		public void setMousePosition(Point point){
+			this.robot.mouseMove(point.x, point.y);
+		}
+		
+		public static void main(String [] args){
+			while(true){
+				System.out.println(MouseInfo.getPointerInfo().getLocation()) ;
+			}
+		}
+}
+

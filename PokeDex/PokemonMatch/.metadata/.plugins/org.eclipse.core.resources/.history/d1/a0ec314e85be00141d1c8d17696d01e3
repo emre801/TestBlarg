@@ -1,0 +1,10 @@
+package com.johnerdo.imageCompare;
+
+import java.awt.Robot;
+
+public class RobotBot {
+		Robot robot;
+		public RobotBot(){
+			this.robot = new Robot();
+		}
+}
